@@ -1,5 +1,6 @@
 ﻿using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using WaecPinService.Model;
 using WaecPinService.Services;
 
 namespace WaecPinService.Controllers
@@ -17,9 +18,9 @@ namespace WaecPinService.Controllers
         }
 
         [HttpPost("generate")]
-        public async Task<ActionResult<List<ScratchCard>>> GenerateCards(int quantity)
+        public async Task<ActionResult<List<ScratchCard>>> GenerateCards(int quantity, string purchasename)
         {
-            var cards = await _pinSerevice.GenerateCardsAsync(quantity);
+            var cards = await _pinSerevice.GenerateCardsAsync(quantity, purchasename);
             return Ok(cards);
         }
 

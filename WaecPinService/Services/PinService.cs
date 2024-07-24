@@ -16,7 +16,7 @@ namespace WaecPinService.Services
             _unitOfWork = unitOfWork;
         }
 
-        public async Task<List<ScratchCard>> GenerateCardsAsync(int quantity)
+        public async Task<List<ScratchCard>> GenerateCardsAsync(int quantity, string purchasename)
         {
             var cards = new List<ScratchCard>();
             for (int i = 0; i < quantity; i++)
@@ -25,7 +25,8 @@ namespace WaecPinService.Services
                 {
                     Id = Guid.NewGuid().ToString(),
                     Pin = GenerateRandomPin(), // Implement your PIN generation logic
-                    Status = CardStatus.Available
+                    Status = CardStatus.Available,
+                    PurchaserName = purchasename,
                 };
                 cards.Add(card);
                 await _repository.InsertAsync(card);

@@ -56,6 +56,8 @@ namespace WaecPinService.DataAccess
                 });
             });
 
+            services.AddTransient<IUnitOfWork, UnitOfWork>();
+            services.AddTransient(typeof(IRepository<>), typeof(Repository<>));
             services.AddTransient<IPinService, PinService>();
           
             return services;

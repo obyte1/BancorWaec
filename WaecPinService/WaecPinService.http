@@ -1,0 +1,6 @@
+@WaecPinService_HostAddress = http://localhost:5054
+
+GET {{WaecPinService_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

@@ -5,6 +5,8 @@ VisualStudioVersion = 17.10.34928.147
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WaecPinService", "WaecPinService\WaecPinService.csproj", "{0456D392-4CFC-450F-8FC7-5F067460CDA0}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FrontEnd", "FrontEnd\FrontEnd.csproj", "{12C5E533-9186-4661-86A5-3DF34283A23A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{0456D392-4CFC-450F-8FC7-5F067460CDA0}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0456D392-4CFC-450F-8FC7-5F067460CDA0}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0456D392-4CFC-450F-8FC7-5F067460CDA0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{12C5E533-9186-4661-86A5-3DF34283A23A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{12C5E533-9186-4661-86A5-3DF34283A23A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{12C5E533-9186-4661-86A5-3DF34283A23A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{12C5E533-9186-4661-86A5-3DF34283A23A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
